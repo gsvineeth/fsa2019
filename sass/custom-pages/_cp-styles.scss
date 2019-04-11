@@ -41,9 +41,9 @@
         z-index:10;
     }
     
-    #fitness .promo-book {
-        background: #F2F2F3 url(../img/bg-spotlight-fitness.png) no-repeat center !important;
-        padding: 500px 0;
+    #online-certified-nutrition .promo-book {
+        background: #F2F2F3 url(../img/bg-spotlight-online-nutrition.jpg) no-repeat center !important;
+        padding: 160px 0;
     }
     
     #nutrition .promo-book {
@@ -421,17 +421,26 @@
     .info-block{
         margin-bottom: 24px;
         padding-right: 10%;
+
     }
     .info-block h4{
-        font-weight: 500;
+        font-size:18px;
+        font-family: 'Metropolis Bold';
+        margin:0px 0px;
+        clear:right;
+    }
+    .info-block p{
+        margin-top:5px;
     }
     
     .assistance-det h2{
         margin: 0 0 20px;
+        text-align: center;
     }
     .assistance-det p{
         max-width: 440px;
         margin: 0 auto 20px;
+        text-align: center;
     }
     .partners-logo img{
         margin-right: 20px;
@@ -548,6 +557,9 @@
     .left-halfbg{
         padding: 80px 0;
         background-size: 56% auto;
+        h2{
+            margin:0px 0px;
+        }
     }
     .left-halfbg{
         position: relative;
@@ -559,6 +571,7 @@
         font-size: 20px;
         font-weight: 100;
         margin-bottom: 30px;
+        margin-top:0px;
     }
     .lefthalfbg-content p{
         margin-bottom: 22px;
@@ -585,11 +598,11 @@
         font-weight: bold;
     }
     .blue-bordered h3 s{
-        font-weight: 100;
+        font-family: 'Metropolis Thin';
     }
     
     .left-halfbg.righthalf{
-        background: url('images/bgcolor1.jpg')no-repeat right top;
+        background: url('../img/bgcolor1.jpg')no-repeat right top;
         background-size: 56% auto;
     }
     .left-halfbg.righthalf .vmiddle-div{
@@ -612,7 +625,7 @@
     .invest-onyou ul li{
         display: block;
         font-size: 16px;
-        font-weight: 500;
+        font-family: 'Metropolis Bold';
         margin-bottom: 20px;
         padding-left: 30px;
         position: relative;
@@ -621,7 +634,7 @@
         content:"";
         width: 15px;
         height: 16px;
-        background: url('images/static/online-nutrition-course/green_tick.png')no-repeat scroll left top;
+        background: url('../img/green_tick.png')no-repeat scroll left top;
         position: absolute;
         left: 0;
         top: 0;
@@ -637,7 +650,7 @@
         margin-bottom: 50px;
     }
     .invest-bottomcontent p span{
-        font-weight: 500;
+        font-family: 'Metropolis Bold';
         display: block;
     }
     .blue-bordered{
@@ -657,8 +670,10 @@
         margin: 25px 0px;
     }
     .bordered-title h3{
-        font-size: 27px;
+        font-size: 24px;
         color: #000;
+        margin:0px 0px;
+        font-family: 'Metropolis Bold';
     }
     .bordered-title h3 span{
         position: relative;
@@ -977,6 +992,7 @@
     #online-certified-nutrition .spotlight{
         background: #efefef url(../img/bg-spotlight-nutrition-online.jpg) no-repeat center;
         padding: 90px 0;
+
     }
                         
     .gym-partners{
@@ -1025,7 +1041,7 @@
         display:none!important;
     }
     .spotlight h1{
-        font-size: 70px;
+        font-size: 60px;
         font-family: 'Metropolis Black';
     }
     .social-proof{
@@ -1051,7 +1067,7 @@
         min-height: 145px;
     }
     .faqs em{
-        font-weight: 500;
+        font-family: 'Metropolis Bold';
         font-style: normal;
         margin:10px 0 14px;
         display: block;

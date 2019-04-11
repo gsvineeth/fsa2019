@@ -49,7 +49,7 @@ Seats are allotted on a first come, first serve basis.
             <section class="content">
                 <div class="container">
 <div class="align-center center">
-  <img style="margin-top:-40px;margin-bottom:-40px;" src="<?php echo get_template_directory_uri(); ?>/splash-images/accr.png" alt="logos of institutions"> 
+  <img style="margin-top:-40px;margin-bottom:-40px;" src="<?php echo get_template_directory_uri(); ?>/img/accr.png" alt="logos of institutions"> 
 <!-- <br><br><br> -->
 </div>
 
@@ -67,7 +67,7 @@ Seats are allotted on a first come, first serve basis.
   						<p>“<span>The course give insights into the minds of top-of-the-line industry experts</span>. This will equip you to look at your clients needs with a well-rounded approach and creates in you a better understanding of the relationship between the human body, food intake, emotional factors and psychological factors that come in the way of fitness in clients.“</p>
 <div class="user-img">
 
-						<img src="<?php echo get_template_directory_uri(); ?>/images/static/online-nutrition-course/siddhantjaiswal.jpg" alt="siddhantjaiswal">					</div>
+						<img src="<?php echo get_template_directory_uri(); ?>/img/siddhantjaiswal.jpg" alt="siddhantjaiswal">					</div>
 
 <div class="user-det">
  						<p class="uname">Siddhant Jaiswal
@@ -94,7 +94,7 @@ Seats are allotted on a first come, first serve basis.
 					<div class="info-block" data-aos="fade-left" data-aos-once="true">
 
 						<div class="info-icon">	
-							<img src="<?php echo get_template_directory_uri(); ?>/images/static/icons-course/1.png" >
+							<img src="<?php echo get_template_directory_uri(); ?>/img/1.png" >
 						</div>
 
 						<h4>Scientific Approach to Coaching</h4>
@@ -111,7 +111,7 @@ Seats are allotted on a first come, first serve basis.
 
 						<div class="info-icon">	
 
-							<img src="<?php echo get_template_directory_uri(); ?>/images/static/icons-course/2.png" >
+							<img src="<?php echo get_template_directory_uri(); ?>/img/2.png" >
 
 						</div>
 
@@ -131,7 +131,7 @@ Seats are allotted on a first come, first serve basis.
 
 						<div class="info-icon">	
 
-							<img src="<?php echo get_template_directory_uri(); ?>/images/static/icons-course/3.png" >
+							<img src="<?php echo get_template_directory_uri(); ?>/img/3.png" >
 
 						</div>
 
@@ -149,7 +149,7 @@ Seats are allotted on a first come, first serve basis.
 
 						<div class="info-icon">	
 
-							<img src="<?php echo get_template_directory_uri(); ?>/images/static/icons-course/4.png" >
+							<img src="<?php echo get_template_directory_uri(); ?>/img/4.png" >
 
 						</div>
 
@@ -169,7 +169,7 @@ Seats are allotted on a first come, first serve basis.
 
 						<div class="info-icon">	
 
-							<img src="<?php echo get_template_directory_uri(); ?>/images/static/icons-course/5.png" >
+							<img src="<?php echo get_template_directory_uri(); ?>/img/5.png" >
 
 						</div>
 
@@ -203,7 +203,7 @@ Seats are allotted on a first come, first serve basis.
 
 				<div class="gym-partners">
 
-    <img  src="<?php echo get_template_directory_uri(); ?>/splash-images/accr2.jpg" alt="logos of gyms"> 
+    <img  src="<?php echo get_template_directory_uri(); ?>/img/accr2.jpg" alt="logos of gyms"> 
 
 
 				</div>
@@ -230,7 +230,7 @@ Seats are allotted on a first come, first serve basis.
 
 						<div class="user-img">
 
-							<img src="<?php echo get_template_directory_uri(); ?>/images/static/avatars/11.png" alt="userimg">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/11.png" alt="userimg">
 
 						</div>							
 
@@ -254,7 +254,7 @@ Seats are allotted on a first come, first serve basis.
 
 						<div class="user-img">
 
-							<img src="<?php echo get_template_directory_uri(); ?>/images/static/avatars/22.png" alt="userimg">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/22.png" alt="userimg">
 
 						</div>							
 
@@ -281,7 +281,7 @@ Seats are allotted on a first come, first serve basis.
 
 						<div class="user-img">
 
-							<img src="<?php echo get_template_directory_uri(); ?>/images/static/avatars/33.png" alt="userimg">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/33.png" alt="userimg">
 
 						</div>							
 
@@ -305,7 +305,7 @@ Seats are allotted on a first come, first serve basis.
 
 						<div class="user-img">
 
-							<img src="<?php echo get_template_directory_uri(); ?>/images/static/avatars/44.png" alt="userimg">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/44.png" alt="userimg">
 
 						</div>							
 
@@ -368,7 +368,7 @@ Seats are allotted on a first come, first serve basis.
 
 						<div class="vmiddle-div">
 
-							    <img  src="<?php echo get_template_directory_uri(); ?>/images/static/online-nutrition-course/why-online-nutrition-course-3.jpg" alt=""> 
+							    <img  src="<?php echo get_template_directory_uri(); ?>/img/why-online-nutrition-course-3.jpg" alt=""> 
 
 
 						</div>
@@ -387,7 +387,7 @@ Seats are allotted on a first come, first serve basis.
 
 				<div class="row">
 
-					<div class="col-sm-6 col-sm-push-6">
+					<div class="col-sm-6 offset-sm-6">
 
 						<div class="lefthalfbg-content">
 
@@ -417,7 +417,7 @@ Seats are allotted on a first come, first serve basis.
 
 						<div class="vmiddle-div">
 
-							    <img  src="<?php echo get_template_directory_uri(); ?>/images/static/online-nutrition-course/why-online-nutrition-course-1.jpg" alt=""> 
+							    <img  src="<?php echo get_template_directory_uri(); ?>/img/why-online-nutrition-course-1.jpg" alt=""> 
 						</div>
 
 					</div>
@@ -462,7 +462,7 @@ Seats are allotted on a first come, first serve basis.
 
 					<div class="invest-bottomcontent">
 
-													    <img class="pull-right" src="<?php echo get_template_directory_uri(); ?>/images/static/online-nutrition-course/book.jpg" alt=""> 
+													    <img class="pull-right" src="<?php echo get_template_directory_uri(); ?>/img/book.jpg" alt=""> 
 
 
 						<p class="smallbluetitle">OUR LATEST EDITION</p>
@@ -575,7 +575,7 @@ Seats are allotted on a first come, first serve basis.
 		
 		<div class="container">
 		<div class="row">
-		<div class="col-md-8 col-md-push-2">
+		<div class="col-md-8 offset-md-2">
 			
 <!--
  						<p><span>
@@ -618,17 +618,17 @@ Chapter 19 : Conclusion</br>
 		<div class="center extra-benefits">
 		<div class="container">
 	<div class="row">
-	<div class="col-md-8 col-md-push-2">
+	<div class="col-md-8 offset-md-2">
 <h3> One can dig into the knowledge base as deep as one likes </h3>
 <p>
 While one has to be able to learn the basic principles of nutrition to get certified, this is not where the course ends. Our Certification Manual that comes in your start-up kit will serve you as an everyday reference guide<br/><br/>
 </p>
 <div class="row icon-plus-desc-wrap">
 	<div class="col-md-4"> <p class="icon icon-support">
-		    <img  src="<?php echo get_template_directory_uri(); ?>/images/static/icon-online-support.png">  </p> <p>Online support box to answer queries regarding the course </p></div>
-	<div class="col-md-4"><p class="icon icon-multidevice"> <img  src="<?php echo get_template_directory_uri(); ?>/images/static/icon-multidevice.png">   </p> <p> Course optimized for cellphones, tablets, laptops and desktops</p>
+		    <img  src="<?php echo get_template_directory_uri(); ?>/img/icon-online-support.png">  </p> <p>Online support box to answer queries regarding the course </p></div>
+	<div class="col-md-4"><p class="icon icon-multidevice"> <img  src="<?php echo get_template_directory_uri(); ?>/img/icon-multidevice.png">   </p> <p> Course optimized for cellphones, tablets, laptops and desktops</p>
  </div>
-	<div class="col-md-4"><p class="icon icon-delivery"> <img  src="<?php echo get_template_directory_uri(); ?>/images/static/icon-free-delivery.png">  </p>  <p>Textbooks and Guides made available to you via Free Shipping. </p>
+	<div class="col-md-4"><p class="icon icon-delivery"> <img  src="<?php echo get_template_directory_uri(); ?>/img/icon-free-delivery.png">  </p>  <p>Textbooks and Guides made available to you via Free Shipping. </p>
  </div>
 </div>
 
@@ -681,7 +681,7 @@ While one has to be able to learn the basic principles of nutrition to get certi
 		 					
 		 					<div class="col-md-6">			 					<h3> &nbsp;</h3>
 		 					
-		 												    <img  src="<?php echo get_template_directory_uri(); ?>/images/static/online-nutrition-course/ifsa-certificate-illu.png" alt=""> 
+		 												    <img  src="<?php echo get_template_directory_uri(); ?>/img/ifsa-certificate-illu.png" alt=""> 
 
 <!--
 </br>
