@@ -479,12 +479,13 @@
         background: #fff;
         box-shadow: 0 2px 34px 0 rgba(0, 0, 0, 0.15);
         border-radius: 4px;
-        padding: 100px 50px 50px;
+        padding: 120px 50px 50px;
         max-width: 780px;
         margin: 0 auto;
     }
     .user-details{
         margin-bottom: -110px;
+        text-align:center;
     }
     .user-img{
         width: 110px;
@@ -498,6 +499,9 @@
     .testi-contents blockquote{
         border: none;
         text-align: center;
+    }
+    .user-details p{
+        margin:5px 0px 0px 0px;
     }
     .user-details p.uname{
         color: #000000;
@@ -1012,7 +1016,7 @@
         vertical-align: bottom;
         
     } 
-    .how-it-works-steps ul{padding: 0;}
+    .how-it-works-steps ul{padding: 0; margin:0;}
     .how-it-works-steps h3{
     margin: 0 0 40px;	
     }

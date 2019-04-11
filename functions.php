@@ -151,6 +151,7 @@ function ifsa2019_scripts() {
 	wp_enqueue_style( 'ifsa2019-style', get_stylesheet_uri() );
 
 	wp_enqueue_script('jquery');
+	wp_enqueue_script( 'owlcarousel',get_template_directory_uri() . '/js/owl.carousel.js', array(), '20151215', true );
 	wp_enqueue_script( 'tinynav',get_template_directory_uri() . '/js/tinynav.js', array(), '20151215', true );
 	wp_enqueue_script( 'custom',get_template_directory_uri() . '/js/custom.js', array(), '20151215', true );
 	wp_enqueue_script( 'jquery-modal',get_template_directory_uri() . '/js/jquery-modal.js', array(), '20151215', true );

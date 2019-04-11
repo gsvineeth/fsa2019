@@ -21,5 +21,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 */
 @import "./css/style.css";
 @import "./css/jquery-modal.css";
+@import "./css/owl.theme.min.css";
+@import "./css/owl.carousel.css";
 @import "./css/bootstrap-grid.min.css";
 

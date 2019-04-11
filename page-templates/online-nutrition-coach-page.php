@@ -701,7 +701,7 @@ Students who want to go beyond the classroom are welcome to contact us for furth
             <section class="how-it-works-steps">
 	            	            	<div class="container">
 		 				<div class="row">
-		 					<div class="col-md-push-3 col-md-6">
+		 					<div class="offset-md-3 col-md-6">
  <h3 class="center">
 	            HOW IT WORKS </h3>	            
 	            <ul class="steps-carousel owl-carousel owl-theme">
@@ -876,7 +876,7 @@ Our placement team assures you with 100% placement assistance. Your resume will 
 		 				<section>
 			 				<div class="container">
  
-<div class="col-md-10 col-md-push-1">
+<div class="col-md-10 offset-md-1">
 <div class="blue-bordered">
 <div class="row">
 <div class="col-md-6">
