@@ -1,0 +1,71 @@
+.user-gateway{
+    padding:10px 30px;
+    background: #fefefe;
+    border:1px solid #eee;
+    a:link,a:visited{
+        color:$color__theme-main;
+    }
+    h3{
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    p.text-center{
+        text-align:center;
+    }
+    .gateway-form{
+        p{
+            margin:0px 0px 10px 0px;
+            input{
+                width:calc(100% - 6px);
+            }
+            label{
+                display: block;
+            }
+        }
+        p.login-remember{
+            label{
+                display:inline;
+            }
+            input{
+                width:20px;
+            }
+        }
+        p.login-submit,
+        p.form-submit{
+            margin-top:30px;
+            .button{
+                background:$color__theme-main;
+                color:#fff;
+                padding:15px 0px;
+                border:1px solid $color__theme-main;
+            }
+        }
+        .wppb-register-user,
+        .wppb-user-forms{
+            ul{
+                list-style:none;
+                margin:0px 0px;
+                padding:0px 0px;
+                li{
+                    margin:10px 0px 0px 0px;
+                    padding:0px 0px;
+                    input{
+                        width:calc(100% - 6px);
+                    }
+                    label{
+                        display: block;
+                    }
+                }
+                li.wppb-send-credentials-checkbox{
+                    label{
+                        display:inline;
+                    }
+                    input{
+                        width:20px;
+                    }
+                }
+            }
+        }
+    }
+}

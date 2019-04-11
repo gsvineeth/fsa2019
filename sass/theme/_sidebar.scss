@@ -1,0 +1,23 @@
+#secondary{
+    padding:40px 0px;
+    .widget{
+        h2.widget-title{
+           text-transform:uppercase;
+           font-size: 18px;
+           color:$color__text-title;
+        }
+        ul{
+            margin:0px 0px;
+            padding:0px 0px;
+            li{
+                list-style: none;
+                padding:5px 0px;
+                a,
+                a:hover,
+                a:visited{
+                    color:$color__text-main;
+                }
+            }
+        }
+    }
+}
