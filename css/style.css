@@ -2281,6 +2281,84 @@ object {
   }
 }
 
+.ifsa-cp .homecbox {
+  height: 400px;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-box-shadow: 0px 0px 10px #fff;
+          box-shadow: 0px 0px 10px #fff;
+}
+
+.ifsa-cp .homecbox:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #2294D5;
+  opacity: 0.9;
+  z-index: 1;
+}
+
+.ifsa-cp .homecbox .homebox-entry {
+  z-index: 2;
+  position: relative;
+  text-align: center;
+}
+
+.ifsa-cp .homecbox .homebox-entry h2 {
+  color: #fff;
+  text-transform: uppercase;
+  margin: 5px 0px;
+  line-height: 1;
+}
+
+.ifsa-cp .homecbox .homebox-entry p {
+  margin: 0px 0px;
+  color: #fff;
+}
+
+.ifsa-cp .homecbox .homebox-entry span.arrow {
+  display: block;
+  width: 32px;
+  height: 32px;
+  background: url("../img/arrow-right.png");
+  background-size: contain;
+  margin: 0px auto;
+  -webkit-transform: translateX(-30px);
+          transform: translateX(-30px);
+  opacity: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.ifsa-cp .homecbox:hover {
+  -webkit-box-shadow: 0px 0px 10px #999;
+          box-shadow: 0px 0px 10px #999;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.ifsa-cp .homecbox:hover span.arrow {
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
+  opacity: 1;
+}
+
+.ifsa-cp .olc-box {
+  background-image: url("../img/online-class.jpg");
+  background-size: cover;
+}
+
+.ifsa-cp .crc-box {
+  background-image: url("../img/classroom.jpg");
+  background-size: cover;
+}
+
 /*--------------------------------------------------------------
 # Theme styles
 --------------------------------------------------------------*/

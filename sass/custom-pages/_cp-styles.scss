@@ -1181,6 +1181,72 @@
       }
       
          
+    // Homepage styles
+
+    .homecbox{
+        height:400px;
+        position: relative;
+        border-radius:10px;
+        overflow: hidden;
+        transition: 0.5s;
+        box-shadow:0px 0px 10px #fff;
+
+        &:after{
+            content: "";
+            width:100%;
+            height:100%;
+            position: absolute;
+            top:0;
+            left:0;
+            background:$color__theme-main;
+            opacity:0.9;
+            z-index:1;
     
-    
+        }
+        .homebox-entry{
+            z-index:2;
+            position: relative;
+            text-align: center;
+            h2{
+                color:#fff;    
+                text-transform: uppercase;
+                margin:5px 0px;
+                line-height: 1;
+            }
+            p{
+                margin:0px 0px;
+                color:#fff;
+            }
+            span.arrow{
+                display: block;
+                width:32px;
+                height:32px;
+                background: url('../img/arrow-right.png');
+                background-size:contain;
+                margin:0px auto;
+                transform: translateX(-30px);
+                opacity:0;
+                transition: 0.5s;
+            }
+        }
+        &:hover{
+            box-shadow:0px 0px 10px #999;
+            transition: 0.5s;
+            span.arrow{
+                transform: translateX(0px);
+                opacity:1;
+            }
+        }
+    }
+    .olc-box{
+        background-image:url('../img/online-class.jpg');
+        background-size:cover;
+    }
+
+    .crc-box{
+        background-image:url('../img/classroom.jpg');
+        background-size:cover;
+    }
+
+
 }
