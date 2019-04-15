@@ -12,7 +12,7 @@
  * @package ifsa2019
  */
 
-get_header();
+get_header('home');
 ?>
 
 	<div id="primary" class="content-area">
@@ -21,7 +21,8 @@ get_header();
 		<div class="container"><div class="row">
 			
 			<div class="col-md-6">
-				<a href="#">
+			<?php $online_page_link = get_theme_mod( 'online_course_page', '' ); ?>
+				<a href="<?php echo get_permalink($online_page_link); ?>">
 				<div class="homecbox olc-box d-flex align-items-center justify-content-center active">
 					<div class="homebox-entry">
 						<h2>Online Courses</h2>
@@ -33,7 +34,8 @@ get_header();
 			</div>
 			
 			<div class="col-md-6">
-				<a href="#">
+			<?php $classroom_page_link = get_theme_mod( 'classroom_course_page', '' ); ?>
+				<a href="<?php echo get_permalink($classroom_page_link); ?>">
 				<div class="homecbox crc-box d-flex align-items-center justify-content-center">
 					<div class="homebox-entry">
 						<h2>Classroom Courses</h2>
@@ -52,4 +54,4 @@ get_header();
 	</div><!-- #primary -->
 
 <?php
-get_footer();
+get_footer('home');

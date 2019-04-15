@@ -614,9 +614,9 @@ a:hover, a:active {
 ## Menus
 --------------------------------------------------------------*/
 .main-navigation {
-  clear: both;
   display: block;
   float: right;
+  clear: left;
   text-transform: uppercase;
   font-size: 14px;
   font-family: Metropolis Semi Bold, sans-serif;
@@ -2281,6 +2281,33 @@ object {
   }
 }
 
+.ifsa-cp #home-masthead {
+  padding: 50px 0px;
+  text-align: center;
+}
+
+.ifsa-cp #home-masthead img {
+  max-width: 140px;
+}
+
+.ifsa-cp #home-masthead h1 {
+  text-transform: uppercase;
+  margin: 0px auto;
+  max-width: 400px;
+  line-height: 1;
+  text-align: center;
+  font-size: 26px;
+  color: #000;
+  padding: 10px 0px;
+}
+
+.ifsa-cp .home-footer {
+  margin-top: 50px;
+  background: #fff;
+  color: #999;
+  text-align: center;
+}
+
 .ifsa-cp .homecbox {
   height: 400px;
   position: relative;
@@ -2290,6 +2317,7 @@ object {
   transition: 0.5s;
   -webkit-box-shadow: 0px 0px 10px #fff;
           box-shadow: 0px 0px 10px #fff;
+  margin: 10px 0px;
 }
 
 .ifsa-cp .homecbox:after {
@@ -2367,9 +2395,60 @@ object {
   background: #fff;
 }
 
+.mobile-menu .mobile-menu-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  z-index: 100;
+}
+
+.mobile-menu .mobile-menu-box .close-button {
+  position: absolute;
+  top: 14px;
+  right: 24px;
+  width: 24px;
+  height: 24px;
+}
+
+.mobile-menu .mobile-menu-box .close-button img {
+  max-width: 100%;
+}
+
 .top-menu {
   padding: 10px 0px;
   border-bottom: 1px solid #ddd;
+}
+
+.top-menu .social-links {
+  float: right;
+}
+
+.top-menu .social-links ul {
+  list-style: none;
+  margin: 0px 0 0 10px;
+  padding: 0px 0px;
+  vertical-align: baseline;
+}
+
+.top-menu .social-links ul li {
+  list-style: none;
+  margin: 0px 5px;
+  padding: 0px 0px;
+  float: left;
+}
+
+.top-menu .social-links ul li img {
+  opacity: 0.7;
+}
+
+.top-menu .social-links ul li img:hover {
+  opacity: 1;
+}
+
+.top-menu .social-links ul li.menu-trigger {
+  display: none;
 }
 
 .head-area {
@@ -2416,14 +2495,9 @@ object {
 }
 
 /* styles for mobile */
-@media screen and (max-width: 576px) {
-  .main-navigation {
-    width: 100%;
-  }
-  .tinynav {
+@media screen and (max-width: 768px) {
+  .top-menu .social-links ul li.menu-trigger {
     display: block;
-    width: 100%;
-    height: 40px;
   }
   #primary-menu {
     display: none;

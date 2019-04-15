@@ -25,6 +25,67 @@ function ifsa2019_customize_register( $wp_customize ) {
 			'render_callback' => 'ifsa2019_customize_partial_blogdescription',
 		) );
 	}
+
+	$wp_customize->add_panel( 'header_naviation_panel',
+		array(
+			'title' => __( 'Theme options' ),
+			'description' => esc_html__( 'Theme options.' ), // Include html tags such as 
+			'priority' => 160, // Not typically needed. Default is 160
+			'capability' => 'edit_theme_options', // Not typically needed. Default is edit_theme_options
+			'theme_supports' => '', // Rarely needed
+			'active_callback' => '', // Rarely needed
+		)
+	);
+	$wp_customize->add_section( 'theme_option_section',
+		array(
+			'title' => __( 'Theme options' ),
+			'description' => esc_html__( 'These are an example of Customizer Custom Controls.' ),
+			'panel' => '', // Only needed if adding your Section to a Panel
+			'priority' => 160, // Not typically needed. Default is 160
+			'capability' => 'edit_theme_options', // Not typically needed. Default is edit_theme_options
+			'theme_supports' => '', // Rarely needed
+			'active_callback' => '', // Rarely needed
+			'description_hidden' => 'false', // Rarely needed. Default is False
+		)
+	);
+	$wp_customize->add_setting( 'online_course_page',
+		array(
+			'default' => '',
+			'transport' => 'refresh',
+			'sanitize_callback' => 'absint'
+		)
+	);
+ 
+	$wp_customize->add_control( 'online_course_page',
+		array(
+			'label' => __( 'Online Course Page' ),
+			'description' => esc_html__( 'Select the page for Online Course' ),
+			'section' => 'theme_option_section',
+			'priority' => 10, // Optional. Order priority to load the control. Default: 10
+			'type' => 'dropdown-pages',
+			'capability' => 'edit_theme_options', // Optional. Default: 'edit_theme_options'
+		)
+	);
+
+	$wp_customize->add_setting( 'classroom_course_page',
+	array(
+		'default' => '',
+		'transport' => 'refresh',
+		'sanitize_callback' => 'absint'
+	)
+	);
+
+	$wp_customize->add_control( 'classroom_course_page',
+		array(
+			'label' => __( 'Classroom Course Page' ),
+			'description' => esc_html__( 'Select the page for Classroom Course' ),
+			'section' => 'theme_option_section',
+			'priority' => 10, // Optional. Order priority to load the control. Default: 10
+			'type' => 'dropdown-pages',
+			'capability' => 'edit_theme_options', // Optional. Default: 'edit_theme_options'
+		)
+	);
+
 }
 add_action( 'customize_register', 'ifsa2019_customize_register' );
 

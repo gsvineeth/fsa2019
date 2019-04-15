@@ -25,9 +25,22 @@
 
 	<header id="masthead" class="site-header">
 		<div class="container"><div class="row">
+		<div class="col-md-12 mobile-menu">
+			<div class="mobile-menu-box">
+				<div class="close-button"> <img src="<?php echo get_template_directory_uri().'/img/close.png'?>"/></div>
+				<div class="mobile-menu-nav">
+					<?php
+					wp_nav_menu( array(
+						'theme_location' => 'menu-1',
+						'menu_id'        => 'primary-menu',
+					) );
+					?>
+				</div>
+			</div>
+		</div>	
 
 		<div class="col-md-12">
-			<div class="top-menu clearfix">
+			<div class="top-menu clearfix d-flex justify-content-end align-items-center">
 			<nav id="site-navigation" class="main-navigation">
 				<?php
 				wp_nav_menu( array(
@@ -35,7 +48,16 @@
 					'menu_id'        => 'primary-menu',
 				) );
 				?>
-			</nav><!-- #site-navigation -->		
+			</nav><!-- #site-navigation -->	
+			<div class="social-links">
+				<ul class="clearfix">
+					<li> <a href="#"><img src="<?php echo get_template_directory_uri() ?>/img/facebook.png" alt="facebook"/></a> </li>
+					<li> <a href="#"><img src="<?php echo get_template_directory_uri() ?>/img/twitter.png" alt="twitter"/></a> </li>
+					<li> <a href="#"><img src="<?php echo get_template_directory_uri() ?>/img/youtube.png" alt="youtube"/></a> </li>
+					<li> <a href="#"><img src="<?php echo get_template_directory_uri() ?>/img/instagram.png" alt="instagram"/></a> </li>
+					<li class="menu-trigger"> <img src="<?php echo get_template_directory_uri() ?>/img/menu.png"/> </li>
+				</ul>
+			</div>	
 			</div>
 		</div>
 
@@ -49,10 +71,13 @@
 					</div>
 
 					<div class="d-sm-flex align-content-center col-sm-7 col-12 d-none">
-						<a class="course-route" href="#">
-							<h4>online course <span>Certified Courses </span></h4>
+						<?php $online_page_link = get_theme_mod( 'online_course_page', '' ); ?>
+						<a class="course-route" href="<?php echo get_permalink($online_page_link); ?>">
+							<h4>online course <span>Certified Courses </span></h4>							
 						</a>
-						<a class="course-route" href="#">
+
+						<?php $classroom_page_link = get_theme_mod( 'classroom_course_page', '' ); ?>
+						<a class="course-route" href="<?php echo get_permalink($classroom_page_link); ?>">
 							<h4>Classroom courses <span>Sought after Courses </span></h4>
 						</a>
 					</div>
@@ -61,6 +86,8 @@
 					<div class="d-flex col-sm-3 col-6 justify-content-end ml-auto">
 						 <div class="align-self-center "> <a class="head-login" href="<?php echo home_url()?>/login">Sign in</a> </div>
 					</div>
+
+					
 					<?php } ?>
 
 				</div>

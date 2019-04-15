@@ -15,6 +15,6 @@
 
    });
    
-    $("#primary-menu").tinyNav();
+    // $("#primary-menu").tinyNav();
 
 } )( jQuery );
