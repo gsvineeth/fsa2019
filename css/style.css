@@ -2395,13 +2395,41 @@ object {
   background: #fff;
 }
 
+.mobile-menu {
+  display: none;
+}
+
 .mobile-menu .mobile-menu-box {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  background: #fff;
+  background: #fafafa;
   z-index: 100;
+  padding-top: 40px;
+}
+
+.mobile-menu .mobile-menu-box .top-course-box {
+  display: block;
+  background: #2294D5;
+  margin: 10px 25px;
+  border-radius: 3px;
+}
+
+.mobile-menu .mobile-menu-box .top-course-box a {
+  color: #fff;
+  padding: 20px 20px;
+  display: block;
+}
+
+.mobile-menu .mobile-menu-box .top-course-box a h4 {
+  margin: 0px;
+  text-transform: uppercase;
+}
+
+.mobile-menu .mobile-menu-box .top-course-box a h4 span {
+  display: block;
+  text-transform: none;
 }
 
 .mobile-menu .mobile-menu-box .close-button {
@@ -2410,10 +2438,50 @@ object {
   right: 24px;
   width: 24px;
   height: 24px;
+  cursor: pointer;
 }
 
 .mobile-menu .mobile-menu-box .close-button img {
   max-width: 100%;
+}
+
+.mobile-menu .mobile-menu-box .mobile-menu-nav {
+  margin: 20px 25px;
+}
+
+.mobile-menu .mobile-menu-box .mobile-menu-nav ul {
+  list-style: none;
+  margin: 0px 0px;
+  padding: 0px 0px;
+}
+
+.mobile-menu .mobile-menu-box .mobile-menu-nav ul li {
+  list-style: none;
+  display: block;
+  margin: 0px 0px;
+  padding: 5px 0px;
+  border-bottom: 1px solid #ddd;
+}
+
+.mobile-menu .mobile-menu-box .mobile-menu-nav ul li a {
+  color: #606060;
+  display: block;
+}
+
+.mobile-menu .mobile-menu-box .mobile-menu-nav ul li a:hover {
+  color: #2294D5;
+}
+
+.mobile-menu .mobile-menu-box .mobile-menu-nav ul li ul {
+  margin: 0px 0px;
+  padding: 0px 0px;
+  margin-bottom: -5px;
+  margin-top: 5px;
+  border-top: 1px solid #ddd;
+}
+
+.mobile-menu .mobile-menu-box .mobile-menu-nav ul li:last-child {
+  border: none;
 }
 
 .top-menu {
@@ -2449,6 +2517,7 @@ object {
 
 .top-menu .social-links ul li.menu-trigger {
   display: none;
+  cursor: pointer;
 }
 
 .head-area {
@@ -2499,7 +2568,7 @@ object {
   .top-menu .social-links ul li.menu-trigger {
     display: block;
   }
-  #primary-menu {
+  #site-navigation {
     display: none;
   }
 }

@@ -5,16 +5,20 @@
         nav:true,
         dots:true,
         items:1
-
-   });
+    });
         
-   $('.steps-carousel').owlCarousel({
+    $('.steps-carousel').owlCarousel({
         nav:true,
         items:1,
         margin:20
-
-   });
-   
-    // $("#primary-menu").tinyNav();
+    });
+    
+    $('.menu-trigger').click( function(){
+        $('.mobile-menu').css('display','block')
+    })
+    
+    $('.close-button').click( function(){
+        $('.mobile-menu').css('display','none')
+    })
 
 } )( jQuery );

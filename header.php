@@ -24,10 +24,24 @@
 <div id="page" class="site">
 
 	<header id="masthead" class="site-header">
-		<div class="container"><div class="row">
-		<div class="col-md-12 mobile-menu">
+		<div class="container">	<div class="row">
+		
+			<div class=" col-md-12 mobile-menu">
 			<div class="mobile-menu-box">
 				<div class="close-button"> <img src="<?php echo get_template_directory_uri().'/img/close.png'?>"/></div>
+				<div class="top-course-box"> 
+					<?php $online_page_link = get_theme_mod( 'online_course_page', '' ); ?>
+						<a class="top-course-route" href="<?php echo get_permalink($online_page_link); ?>">
+							<h4>online course <span>Certified Courses </span></h4>							
+						</a>
+				</div>
+				<div class="top-course-box"> 
+					<?php $classroom_page_link = get_theme_mod( 'classroom_course_page', '' ); ?>
+						<a class="top-course-route" href="<?php echo get_permalink($classroom_page_link); ?>">
+							<h4>Classroom courses <span>Sought after Courses </span></h4>
+						</a>
+				</div>
+
 				<div class="mobile-menu-nav">
 					<?php
 					wp_nav_menu( array(
@@ -37,6 +51,7 @@
 					?>
 				</div>
 			</div>
+			
 		</div>	
 
 		<div class="col-md-12">

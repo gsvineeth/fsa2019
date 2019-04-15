@@ -4,23 +4,81 @@
 }
 
 .mobile-menu{
+    display:none;
     .mobile-menu-box{
         position: absolute;
         top:0;
         left:0;
         width:100%;
-        background:#fff;
+        background:#fafafa;
         z-index:100;
+        padding-top:40px;
+        .top-course-box{
+            display: block;
+            background: $color__theme-main;
+            margin:10px 25px;
+            border-radius:3px;
+            a{
+                color:#fff;
+                padding:20px 20px;
+                display: block;
+                h4{
+                    margin:0px;
+                    text-transform: uppercase;
+                    span{
+                        display:block;
+                        text-transform: none;
+                    }
+                }
+
+            }
+        }
+
         .close-button{
             position: absolute;
             top:14px;
             right:24px;
             width:24px;
             height:24px;
+            cursor: pointer;
             img{
                 max-width: 100%;
             }
 
+        }
+        .mobile-menu-nav{
+            margin:20px 25px;
+            ul{
+                list-style:none;
+                margin:0px 0px;
+                padding:0px 0px;
+                li{
+                    list-style:none;
+                    display: block;
+                    margin:0px 0px;
+                    padding:5px 0px;
+                    border-bottom: 1px solid #ddd;
+                    a{
+                        color: $color__text-main;
+                        display: block;
+
+                    }
+                    a:hover{
+                        color:$color__theme-main;
+                    }
+
+                    ul{
+                        margin:0px 0px;
+                        padding:0px 0px;
+                       margin-bottom:-5px;
+                       margin-top:5px;
+                       border-top:1px solid #ddd;
+                    }
+                }
+                li:last-child{
+                    border:none;
+                }
+            }
         }
     }
 }
@@ -49,6 +107,7 @@
             }
             li.menu-trigger{
                 display: none;
+                cursor: pointer;
             }
         }
     }
@@ -96,5 +155,5 @@
     .top-menu .social-links ul li.menu-trigger{
         display:block;
     }
-    #primary-menu { display: none }
+    #site-navigation { display: none }
 }
