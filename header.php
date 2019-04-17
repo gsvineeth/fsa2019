@@ -79,13 +79,13 @@
 		<div class="col-md-12">
 			<div class="head-area">
 				<div class="row d-flex">
-					<div class="d-flex col-sm-2 col-6">
+					<div class="d-flex col-md-2 col-6">
 						<div class="site-branding d-flex align-self-center ">
 							<?php the_custom_logo(); ?>
 						</div><!-- .site-branding -->
 					</div>
 
-					<div class="d-sm-flex align-content-center col-sm-7 col-12 d-none">
+					<div class="d-md-flex align-content-center col-md-7 col-12 d-none">
 						<?php $online_page_link = get_theme_mod( 'online_course_page', '' ); ?>
 						<a class="course-route" href="<?php echo get_permalink($online_page_link); ?>">
 							<h4>online course <span>Certified Courses </span></h4>							
@@ -97,13 +97,15 @@
 						</a>
 					</div>
 
-					<?php if ( ! is_user_logged_in() ){  ?>
-					<div class="d-flex col-sm-3 col-6 justify-content-end ml-auto">
-						 <div class="align-self-center "> <a class="head-login" href="<?php echo home_url()?>/login">Sign in</a> </div>
-					</div>
 
+					<div class="d-flex col-md-3 col-6 justify-content-end ml-auto">
+					<?php if ( ! is_user_logged_in() ){  ?>
+						 <div class="align-self-center "> <a class="head-login" href="<?php echo home_url()?>/login">Sign in</a> </div>
+						 <?php } else { ?>
+							<div class="align-self-center "> <a class="head-login" href="<?php echo wp_logout_url(get_permalink()); ?>">Sign Out</a> </div>
+						 <?php } ?>
+					</div>
 					
-					<?php } ?>
 
 				</div>
 			</div>

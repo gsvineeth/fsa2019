@@ -6,14 +6,31 @@
  *
  * @package ifsa2019
  */
-remove_action( 'learn-press/content-landing-summary', 'learn_press_course_tabs', 20 );
 
-remove_action( 'learn-press/content-landing-summary', 'learn_press_course_students', 25 );
 
-//remove_action( 'learn_press_content_learning_summary', 'learn_press_course_remaining_time', 55 );
-remove_action( 'learn-press/content-learning-summary', 'learn_press_course_remaining_time', 30 );
+
+
+
 
 if ( ! function_exists( 'ifsa2019_setup' ) ) :
+
+	//  Learnpress Action Hooks removal 
+	remove_action( 'learn-press/before-main-content', 'learn_press_breadcrumb', 10 );
+
+	//remove_action( 'learn-press/content-learning-summary', 'learn_press_course_tabs', 35 );
+
+	// remove_action( 'learn-press/content-landing-summary', 'learn_press_course_tabs', 20 );
+	// remove_action( 'learn-press/content-landing-summary', 'learn_press_course_students', 25 );
+	
+	//remove_action( 'learn_press_content_learning_summary', 'learn_press_course_remaining_time', 55 );
+	remove_action( 'learn-press/content-learning-summary', 'learn_press_course_remaining_time', 30 );
+
+	add_action( 'init', 'remove_custom_post_comment' );
+
+	function remove_custom_post_comment() {
+		remove_post_type_support( 'lesson', 'comments' );
+	}
+
 	/**
 	 * Sets up theme defaults and registers support for various WordPress features.
 	 *

@@ -118,6 +118,9 @@
     border-bottom:1px solid #ddd;
     .site-branding{
         margin-right:10px;
+        img.custom-logo{
+            max-width:80px;
+        }
     }
     .course-route{
         color:$color__text-main;

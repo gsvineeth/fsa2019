@@ -69,3 +69,27 @@
         }
     }
 }
+
+
+#course-item-content-header {
+    background:$color__theme-main!important;
+    color:#fff;
+    .course-item-search input{
+        color:#fff !important;
+    }
+    .course-item-search input:focus,
+    .course-item-search input::placeholder{
+        color:#fff!important;
+    }
+    .course-item-search button{
+        color:#fff!important;
+    }
+    .course-title{
+        a{
+            color:#fff;
+        }
+    }
+    a.toggle-content-item{
+        color:#fff;
+    }
+}

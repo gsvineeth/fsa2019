@@ -2387,9 +2387,6 @@ object {
   background-size: cover;
 }
 
-/*--------------------------------------------------------------
-# Theme styles
---------------------------------------------------------------*/
 #masthead {
   padding: 0px 0px;
   background: #fff;
@@ -2527,6 +2524,10 @@ object {
 
 .head-area .site-branding {
   margin-right: 10px;
+}
+
+.head-area .site-branding img.custom-logo {
+  max-width: 80px;
 }
 
 .head-area .course-route {
@@ -2739,5 +2740,46 @@ object {
 .user-gateway .gateway-form .wppb-register-user ul li.wppb-send-credentials-checkbox input,
 .user-gateway .gateway-form .wppb-user-forms ul li.wppb-send-credentials-checkbox input {
   width: 20px;
+}
+
+#course-item-content-header {
+  background: #2294D5 !important;
+  color: #fff;
+}
+
+#course-item-content-header .course-item-search input {
+  color: #fff !important;
+}
+
+#course-item-content-header .course-item-search input:focus,
+#course-item-content-header .course-item-search input::-webkit-input-placeholder {
+  color: #fff !important;
+}
+
+#course-item-content-header .course-item-search input:focus,
+#course-item-content-header .course-item-search input:-ms-input-placeholder {
+  color: #fff !important;
+}
+
+#course-item-content-header .course-item-search input:focus,
+#course-item-content-header .course-item-search input::-ms-input-placeholder {
+  color: #fff !important;
+}
+
+#course-item-content-header .course-item-search input:focus,
+#course-item-content-header .course-item-search input::placeholder {
+  color: #fff !important;
+}
+
+#course-item-content-header .course-item-search button {
+  color: #fff !important;
+}
+
+#course-item-content-header .course-title a {
+  color: #fff;
+}
+
+#course-item-content-header a.toggle-content-item {
+  color: #fff;
 }
 /*# sourceMappingURL=style.css.map */

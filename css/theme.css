@@ -1,0 +1,399 @@
+/*--------------------------------------------------------------
+# Theme styles
+--------------------------------------------------------------*/
+#masthead {
+  padding: 0px 0px;
+  background: #fff;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+.mobile-menu .mobile-menu-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #fafafa;
+  z-index: 100;
+  padding-top: 40px;
+}
+
+.mobile-menu .mobile-menu-box .top-course-box {
+  display: block;
+  background: #2294D5;
+  margin: 10px 25px;
+  border-radius: 3px;
+}
+
+.mobile-menu .mobile-menu-box .top-course-box a {
+  color: #fff;
+  padding: 20px 20px;
+  display: block;
+}
+
+.mobile-menu .mobile-menu-box .top-course-box a h4 {
+  margin: 0px;
+  text-transform: uppercase;
+}
+
+.mobile-menu .mobile-menu-box .top-course-box a h4 span {
+  display: block;
+  text-transform: none;
+}
+
+.mobile-menu .mobile-menu-box .close-button {
+  position: absolute;
+  top: 14px;
+  right: 24px;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.mobile-menu .mobile-menu-box .close-button img {
+  max-width: 100%;
+}
+
+.mobile-menu .mobile-menu-box .mobile-menu-nav {
+  margin: 20px 25px;
+}
+
+.mobile-menu .mobile-menu-box .mobile-menu-nav ul {
+  list-style: none;
+  margin: 0px 0px;
+  padding: 0px 0px;
+}
+
+.mobile-menu .mobile-menu-box .mobile-menu-nav ul li {
+  list-style: none;
+  display: block;
+  margin: 0px 0px;
+  padding: 5px 0px;
+  border-bottom: 1px solid #ddd;
+}
+
+.mobile-menu .mobile-menu-box .mobile-menu-nav ul li a {
+  color: #606060;
+  display: block;
+}
+
+.mobile-menu .mobile-menu-box .mobile-menu-nav ul li a:hover {
+  color: #2294D5;
+}
+
+.mobile-menu .mobile-menu-box .mobile-menu-nav ul li ul {
+  margin: 0px 0px;
+  padding: 0px 0px;
+  margin-bottom: -5px;
+  margin-top: 5px;
+  border-top: 1px solid #ddd;
+}
+
+.mobile-menu .mobile-menu-box .mobile-menu-nav ul li:last-child {
+  border: none;
+}
+
+.top-menu {
+  padding: 10px 0px;
+  border-bottom: 1px solid #ddd;
+}
+
+.top-menu .social-links {
+  float: right;
+}
+
+.top-menu .social-links ul {
+  list-style: none;
+  margin: 0px 0 0 10px;
+  padding: 0px 0px;
+  vertical-align: baseline;
+}
+
+.top-menu .social-links ul li {
+  list-style: none;
+  margin: 0px 5px;
+  padding: 0px 0px;
+  float: left;
+}
+
+.top-menu .social-links ul li img {
+  opacity: 0.7;
+}
+
+.top-menu .social-links ul li img:hover {
+  opacity: 1;
+}
+
+.top-menu .social-links ul li.menu-trigger {
+  display: none;
+  cursor: pointer;
+}
+
+.head-area {
+  padding: 10px 0px;
+  border-bottom: 1px solid #ddd;
+}
+
+.head-area .site-branding {
+  margin-right: 10px;
+}
+
+.head-area .site-branding img.custom-logo {
+  max-width: 80px;
+}
+
+.head-area .course-route {
+  color: #606060;
+  margin-right: 20px;
+}
+
+.head-area .course-route h4 {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.head-area .course-route h4 span {
+  display: block;
+  text-transform: none;
+  font-family: Metropolis Regular, sans-serif;
+  font-size: 14px;
+}
+
+.head-area .head-login {
+  display: block;
+  border: 2px solid #2294D5;
+  height: 40px;
+  border-radius: 20px;
+  padding: 0px 20px;
+  line-height: 40px;
+  text-transform: uppercase;
+  color: #2294D5;
+  font-family: Metropolis Semi Bold, sans-serif;
+}
+
+/* styles for desktop */
+.tinynav {
+  display: none;
+}
+
+/* styles for mobile */
+@media screen and (max-width: 768px) {
+  .top-menu .social-links ul li.menu-trigger {
+    display: block;
+  }
+  #site-navigation {
+    display: none;
+  }
+}
+
+#footer-widgets-area {
+  background: #626c72;
+  color: #fff;
+  padding: 30px 0px 0px 0px;
+}
+
+#footer-widgets-area .widget {
+  margin-top: 30px;
+  font-size: 14px;
+}
+
+#footer-widgets-area .widget h2.widget-title {
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+#footer-widgets-area .widget ul {
+  margin: 0;
+  padding: 0;
+}
+
+#footer-widgets-area .widget ul li {
+  list-style: none;
+  margin: 15px 0px;
+}
+
+#footer-widgets-area .widget ul li a {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+#footer-widgets-area .widget ul li a:hover {
+  color: #fff;
+}
+
+.site-footer {
+  padding: 30px 0px;
+  background: #626c72;
+  color: #fff;
+  font-size: 14px;
+}
+
+#primary {
+  padding: 40px 0px;
+}
+
+#primary .post .entry-header h1,
+#primary .page .entry-header h1 {
+  color: #222;
+}
+
+#primary .post .entry-header h2 a,
+#primary .page .entry-header h2 a {
+  color: #222;
+}
+
+#secondary {
+  padding: 40px 0px;
+}
+
+#secondary .widget h2.widget-title {
+  text-transform: uppercase;
+  font-size: 18px;
+  color: #222;
+}
+
+#secondary .widget ul {
+  margin: 0px 0px;
+  padding: 0px 0px;
+}
+
+#secondary .widget ul li {
+  list-style: none;
+  padding: 5px 0px;
+}
+
+#secondary .widget ul li a,
+#secondary .widget ul li a:hover,
+#secondary .widget ul li a:visited {
+  color: #606060;
+}
+
+.user-gateway {
+  padding: 10px 30px;
+  background: #fefefe;
+  border: 1px solid #eee;
+}
+
+.user-gateway a:link, .user-gateway a:visited {
+  color: #2294D5;
+}
+
+.user-gateway h3 {
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.user-gateway p.text-center {
+  text-align: center;
+}
+
+.user-gateway .gateway-form p {
+  margin: 0px 0px 10px 0px;
+}
+
+.user-gateway .gateway-form p input {
+  width: calc(100% - 6px);
+}
+
+.user-gateway .gateway-form p label {
+  display: block;
+}
+
+.user-gateway .gateway-form p.login-remember label {
+  display: inline;
+}
+
+.user-gateway .gateway-form p.login-remember input {
+  width: 20px;
+}
+
+.user-gateway .gateway-form p.login-submit,
+.user-gateway .gateway-form p.form-submit {
+  margin-top: 30px;
+}
+
+.user-gateway .gateway-form p.login-submit .button,
+.user-gateway .gateway-form p.form-submit .button {
+  background: #2294D5;
+  color: #fff;
+  padding: 15px 0px;
+  border: 1px solid #2294D5;
+}
+
+.user-gateway .gateway-form .wppb-register-user ul,
+.user-gateway .gateway-form .wppb-user-forms ul {
+  list-style: none;
+  margin: 0px 0px;
+  padding: 0px 0px;
+}
+
+.user-gateway .gateway-form .wppb-register-user ul li,
+.user-gateway .gateway-form .wppb-user-forms ul li {
+  margin: 10px 0px 0px 0px;
+  padding: 0px 0px;
+}
+
+.user-gateway .gateway-form .wppb-register-user ul li input,
+.user-gateway .gateway-form .wppb-user-forms ul li input {
+  width: calc(100% - 6px);
+}
+
+.user-gateway .gateway-form .wppb-register-user ul li label,
+.user-gateway .gateway-form .wppb-user-forms ul li label {
+  display: block;
+}
+
+.user-gateway .gateway-form .wppb-register-user ul li.wppb-send-credentials-checkbox label,
+.user-gateway .gateway-form .wppb-user-forms ul li.wppb-send-credentials-checkbox label {
+  display: inline;
+}
+
+.user-gateway .gateway-form .wppb-register-user ul li.wppb-send-credentials-checkbox input,
+.user-gateway .gateway-form .wppb-user-forms ul li.wppb-send-credentials-checkbox input {
+  width: 20px;
+}
+
+#course-item-content-header {
+  background: #2294D5 !important;
+  color: #fff;
+}
+
+#course-item-content-header .course-item-search input {
+  color: #fff !important;
+}
+
+#course-item-content-header .course-item-search input:focus,
+#course-item-content-header .course-item-search input::-webkit-input-placeholder {
+  color: #fff !important;
+}
+
+#course-item-content-header .course-item-search input:focus,
+#course-item-content-header .course-item-search input:-ms-input-placeholder {
+  color: #fff !important;
+}
+
+#course-item-content-header .course-item-search input:focus,
+#course-item-content-header .course-item-search input::-ms-input-placeholder {
+  color: #fff !important;
+}
+
+#course-item-content-header .course-item-search input:focus,
+#course-item-content-header .course-item-search input::placeholder {
+  color: #fff !important;
+}
+
+#course-item-content-header .course-item-search button {
+  color: #fff !important;
+}
+
+#course-item-content-header .course-title a {
+  color: #fff;
+}
+
+#course-item-content-header a.toggle-content-item {
+  color: #fff;
+}
+/*# sourceMappingURL=theme.css.map */
