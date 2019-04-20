@@ -16,20 +16,23 @@ if ( ! function_exists( 'ifsa2019_setup' ) ) :
 
 	//  Learnpress Action Hooks removal 
 	remove_action( 'learn-press/before-main-content', 'learn_press_breadcrumb', 10 );
+	remove_action( 'learn-press/after-course-item-content', 'learn_press_content_item_nav', 5 );
+	remove_action( 'learn-press/after-course-item-content', 'learn_press_lesson_comment_form', 10 );
 
-	//remove_action( 'learn-press/content-learning-summary', 'learn_press_course_tabs', 35 );
+	//Course  landing page hooks
+	remove_action( 'learn-press/content-landing-summary', 'learn_press_course_tabs', 20 );
+	remove_action( 'learn-press/content-landing-summary', 'learn_press_course_price', 25 );
+	remove_action( 'learn-press/content-landing-summary', 'learn_press_course_buttons', 30 );
+	add_action( 'ifsa_course_price', 'learn_press_course_price', 5 );
+	add_action( 'ifsa_course_buttons', 'learn_press_course_buttons', 5 );
 
-	// remove_action( 'learn-press/content-landing-summary', 'learn_press_course_tabs', 20 );
-	// remove_action( 'learn-press/content-landing-summary', 'learn_press_course_students', 25 );
-	
-	//remove_action( 'learn_press_content_learning_summary', 'learn_press_course_remaining_time', 55 );
+	// Course Learning page hooks
+	remove_action( 'learn-press/content-learning-summary', 'learn_press_course_students', 15 );
+	remove_action( 'learn-press/content-learning-summary', 'learn_press_course_tabs', 35 );
+
+
+
 	remove_action( 'learn-press/content-learning-summary', 'learn_press_course_remaining_time', 30 );
-
-	add_action( 'init', 'remove_custom_post_comment' );
-
-	function remove_custom_post_comment() {
-		remove_post_type_support( 'lesson', 'comments' );
-	}
 
 	/**
 	 * Sets up theme defaults and registers support for various WordPress features.
@@ -165,7 +168,9 @@ add_action( 'widgets_init', 'ifsa2019_widgets_init' );
 function ifsa2019_scripts() {
 	wp_enqueue_style( 'rubik', '//fonts.googleapis.com/css?family=Rubik:300,400,700' );
 	wp_enqueue_style( 'metropolis', get_template_directory_uri() . '/fonts/fonts.css');
+	wp_enqueue_style( 'theme', get_template_directory_uri() . '/css/theme.css');
 	wp_enqueue_style( 'ifsa2019-style', get_stylesheet_uri() );
+
 
 	wp_enqueue_script('jquery');
 	wp_enqueue_script( 'owlcarousel',get_template_directory_uri() . '/js/owl.carousel.js', array(), '20151215', true );
@@ -180,7 +185,7 @@ function ifsa2019_scripts() {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
-add_action( 'wp_enqueue_scripts', 'ifsa2019_scripts' );
+add_action( 'wp_enqueue_scripts', 'ifsa2019_scripts');
 
 /**
  * Implement the Custom Header feature.
