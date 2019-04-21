@@ -51,8 +51,8 @@ function ifsa2019_customize_register( $wp_customize ) {
 	$wp_customize->add_setting( 'online_course_page',
 		array(
 			'default' => '',
-			'transport' => 'refresh',
-			'sanitize_callback' => 'absint'
+			'transport' => '',
+			'sanitize_callback' => 'esc_url'
 		)
 	);
  
@@ -62,7 +62,7 @@ function ifsa2019_customize_register( $wp_customize ) {
 			'description' => esc_html__( 'Select the page for Online Course' ),
 			'section' => 'theme_option_section',
 			'priority' => 10, // Optional. Order priority to load the control. Default: 10
-			'type' => 'dropdown-pages',
+			'type' => 'url',
 			'capability' => 'edit_theme_options', // Optional. Default: 'edit_theme_options'
 		)
 	);

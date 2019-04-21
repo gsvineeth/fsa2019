@@ -31,7 +31,8 @@
 				<div class="close-button"> <img src="<?php echo get_template_directory_uri().'/img/close.png'?>"/></div>
 				<div class="top-course-box"> 
 					<?php $online_page_link = get_theme_mod( 'online_course_page', '' ); ?>
-						<a class="top-course-route" href="<?php echo get_permalink($online_page_link); ?>">
+					
+						<a class="top-course-route" href="<?php echo $online_page_link; ?>">
 							<h4>online course <span>Certified Courses </span></h4>							
 						</a>
 				</div>
@@ -87,7 +88,7 @@
 
 					<div class="d-md-flex align-content-center col-md-7 col-12 d-none">
 						<?php $online_page_link = get_theme_mod( 'online_course_page', '' ); ?>
-						<a class="course-route" href="<?php echo get_permalink($online_page_link); ?>">
+						<a class="course-route" href="<?php echo $online_page_link; ?>">
 							<h4>online course <span>Certified Courses </span></h4>							
 						</a>
 
