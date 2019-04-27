@@ -463,36 +463,44 @@ body.course-item-popup .content-item-summary {
 
 .lp-single-course .course-page-price-action {
   border: 1px solid #eee;
-  padding: 20px 20px;
+  padding: 10px 20px;
 }
 
 .lp-single-course .course-page-price-action .course-price {
   text-align: center;
+  text-transform: uppercase;
+  color: #222;
 }
 
 .lp-single-course .course-page-price-action .course-price .price {
   font-size: 36px;
 }
 
-.lp-single-course .course-page-price-action .lp-course-buttons {
-  margin-bottom: 0px !important;
+.lp-single-course .course-page-price-action .lp-course-buttons form {
+  width: 100%;
 }
 
-.lp-single-course .course-page-price-action .lp-course-buttons .purchase-course {
+.lp-single-course .course-page-price-action .lp-course-buttons form .button {
   width: 100%;
-  display: block;
 }
 
-.lp-single-course .course-page-price-action .lp-course-buttons .purchase-course .lp-button {
-  display: block;
-  width: 100%;
-  line-height: 60px;
-  height: 60px;
-  background: #2294D5;
-  color: #fff;
-  border-radius: 5px;
-  border: 1px solid #2294D5;
+.learnpress-page .lp-button {
+  background: #2294D5 !important;
+  border: 1px solid #2294D5 !important;
   cursor: pointer;
-  font-size: 18px;
+  color: #fff !important;
+}
+
+body.course-item-popup #learn-press-content-item .course-item-title {
+  font-size: 32px !important;
+}
+
+.woocommerce ul.order_details {
+  margin: 0px 0px;
+  padding: 0px 0px;
+}
+
+.woocommerce ul.order_details li {
+  padding: 5px 10px 5px 0px;
 }
 /*# sourceMappingURL=theme.css.map */

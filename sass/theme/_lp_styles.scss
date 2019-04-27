@@ -166,32 +166,46 @@ body.course-item-popup{
 .lp-single-course{
 .course-page-price-action{
     border:1px solid #eee;
-    padding:20px 20px;
+    padding:10px 20px;
     .course-price{
         text-align: center;
+        text-transform: uppercase;
+        color:$color__text-title;
         .price{
             font-size: 36px;
         }
     }
     .lp-course-buttons{
-        margin-bottom: 0px!important;
-        .purchase-course{
+        form{
             width:100%;
-            display: block;
-            .lp-button{
-                display:block;
+            .button{
                 width:100%;
-                line-height: 60px;
-                height:60px;
-                background:$color__theme-main;
-                color:#fff;
-                border-radius: 5px;
-                border:1px solid $color__theme-main;
-                cursor: pointer;
-                font-size: 18px;
-
             }
         }
+
     }
 }
+}
+
+.learnpress-page .lp-button{
+    background:$color__theme-main!important;
+    border:1px solid $color__theme-main!important;
+    cursor: pointer;
+    color:#fff!important;
+
+}
+
+body.course-item-popup #learn-press-content-item .course-item-title{
+    font-size:32px!important;
+}
+
+.woocommerce{
+    ul.order_details{
+        margin:0px 0px;
+        padding:0px 0px;
+        li{
+            padding: 5px 10px 5px 0px;
+            
+        }
+    }
 }
