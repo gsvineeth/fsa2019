@@ -21,8 +21,15 @@ get_header('home');
 		<div class="container"><div class="row">
 			
 			<div class="col-md-6">
-			<?php $online_page_link = get_theme_mod('online_course_page', '' ); ?>
+			<?php 
+				$online_page_link = get_theme_mod('online_course_page', '' ); 
+				$nutrition_course_id = get_theme_mod( 'nutrition_course_id', '' );
+			?>
+			<?php if( is_user_logged_in() ) { ?>
 			<a href="<?php echo get_permalink($online_page_link); ?>">
+			<?php } else { ?>
+				<a href="<?php echo get_permalink($nutrition_course_id); ?>">
+			<?php } ?>
 				<div class="homecbox olc-box d-flex align-items-center justify-content-center active">
 					<div class="homebox-entry">
 						<h2>Online Courses</h2>
