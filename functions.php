@@ -220,4 +220,13 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 // }
 // add_filter( 'login_url', 'my_login_page', 10, 3 );
 
-
+/**
+ * @snippet       Change "Place Order" Button text @ WooCommerce Checkout
+ * @sourcecode    https://rudrastyh.com/?p=8327#woocommerce_order_button_text
+ * @author        Misha Rudrastyh
+ */
+add_filter( 'woocommerce_order_button_text', 'misha_custom_button_text' );
+ 
+function misha_custom_button_text( $button_text ) {
+   return 'Make Payment'; // new text is here 
+}
