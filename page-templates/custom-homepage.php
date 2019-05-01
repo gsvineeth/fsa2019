@@ -21,12 +21,12 @@ get_header('home');
 		<div class="container"><div class="row">
 			
 			<div class="col-md-6">
-			<?php $online_page_link = get_theme_mod( 'online_course_page', '' ); ?>
-				<a href="<?php echo $online_page_link; ?>">
+			<?php $online_page_link = get_theme_mod('online_course_page', '' ); ?>
+			<a href="<?php echo get_permalink($online_page_link); ?>">
 				<div class="homecbox olc-box d-flex align-items-center justify-content-center active">
 					<div class="homebox-entry">
 						<h2>Online Courses</h2>
-						<p> Visit our online course</p>
+						<p> Certified Nutrition Coach</p>
 						<span class="arrow"> </span>
 					</div>					
 				</div>

@@ -52,7 +52,7 @@ function ifsa2019_customize_register( $wp_customize ) {
 		array(
 			'default' => '',
 			'transport' => '',
-			'sanitize_callback' => 'esc_url'
+			'sanitize_callback' => 'absint'
 		)
 	);
  
@@ -62,7 +62,7 @@ function ifsa2019_customize_register( $wp_customize ) {
 			'description' => esc_html__( 'Select the page for Online Course' ),
 			'section' => 'theme_option_section',
 			'priority' => 10, // Optional. Order priority to load the control. Default: 10
-			'type' => 'url',
+			'type' => 'dropdown-pages',
 			'capability' => 'edit_theme_options', // Optional. Default: 'edit_theme_options'
 		)
 	);
@@ -85,6 +85,25 @@ function ifsa2019_customize_register( $wp_customize ) {
 			'capability' => 'edit_theme_options', // Optional. Default: 'edit_theme_options'
 		)
 	);
+
+	$wp_customize->add_setting( 'nutrition_course_id',
+	array(
+		'default' => '',
+		'transport' => 'refresh',
+		'sanitize_callback' => 'absint'
+	)
+	);
+
+	$wp_customize->add_control( 'nutrition_course_id',
+	array(
+		'label' => __( 'Online Nutrtion Course ID' ),
+		'description' => esc_html__( 'Enter the ID of online nutrtion course' ),
+		'section' => 'theme_option_section',
+		'priority' => 10, // Optional. Order priority to load the control. Default: 10
+		'type' => 'text',
+		'capability' => 'edit_theme_options', // Optional. Default: 'edit_theme_options'
+	)
+);
 
 }
 add_action( 'customize_register', 'ifsa2019_customize_register' );

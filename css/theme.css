@@ -186,6 +186,12 @@
   #site-navigation {
     display: none;
   }
+  .ifsa-cp #home-masthead img {
+    max-width: 90px;
+  }
+  .ifsa-cp #home-masthead h1 {
+    font-size: 22px;
+  }
 }
 
 #footer-widgets-area {
@@ -482,6 +488,21 @@ body.course-item-popup .content-item-summary {
 
 .lp-single-course .course-page-price-action .lp-course-buttons form .button {
   width: 100%;
+}
+
+.ifsa-course-button {
+  padding: 20px 0px;
+}
+
+.ifsa-course-button form .button {
+  background: #2294D5 !important;
+  border: 1px solid #2294D5 !important;
+  cursor: pointer;
+  color: #fff !important;
+  width: 250px;
+  padding: 15px 0px;
+  display: block;
+  text-transform: uppercase;
 }
 
 .learnpress-page .lp-button {

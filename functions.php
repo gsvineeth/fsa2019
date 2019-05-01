@@ -7,11 +7,6 @@
  * @package ifsa2019
  */
 
-
-
-
-
-
 if ( ! function_exists( 'ifsa2019_setup' ) ) :
 
 	//  Learnpress Action Hooks removal 
@@ -20,6 +15,7 @@ if ( ! function_exists( 'ifsa2019_setup' ) ) :
 	remove_action( 'learn-press/after-course-item-content', 'learn_press_lesson_comment_form', 10 );
 
 	//Course  landing page hooks
+	remove_action( 'learn-press/content-landing-summary', 'learn_press_course_students', 10 );
 	remove_action( 'learn-press/content-landing-summary', 'learn_press_course_tabs', 20 );
 	remove_action( 'learn-press/content-landing-summary', 'learn_press_course_price', 25 );
 	remove_action( 'learn-press/content-landing-summary', 'learn_press_course_buttons', 30 );
@@ -215,22 +211,13 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 }
 
 
-// add_action('init', 'my_custom_init');
-//     function my_custom_init() {
-//         // 'portfolio' is my post type, you replace it with yours
-// 		add_post_type_support( 'lp_lesson', 'thumbnail' ); 
-// 		add_image_size( 'lesson_thumbnail', 130, 80 );
-//     }
 
 
+// function my_login_page( $login_url, $redirect, $force_reauth ) {
+//     $login_page = home_url( '/login/' );
+//     $login_url = add_query_arg( 'redirect_to', $redirect, $login_page );
+//     return $login_url;
+// }
+// add_filter( 'login_url', 'my_login_page', 10, 3 );
 
-function my_login_page( $login_url, $redirect, $force_reauth ) {
-    $login_page = home_url( '/login/' );
-    $login_url = add_query_arg( 'redirect_to', $redirect, $login_page );
-    return $login_url;
-}
-add_filter( 'login_url', 'my_login_page', 10, 3 );
-
-
-remove_action( 'learn-press/content-landing-summary', 'learn_press_course_students', 10 );
 

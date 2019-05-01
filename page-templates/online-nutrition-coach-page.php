@@ -485,14 +485,22 @@ Seats are allotted on a first come, first serve basis.
 
 						<div class="bordered-title">
 
-							<h3> <s> ₹30,000 </s> </br>
-								 ₹25,000 for LIFETIME ACCESS</h3>
+							<h3> <s> ₹25,000 </s> </br>
+								 ₹19,999 for LIFETIME ACCESS</h3>
+<div class="ifsa-course-button"> 
 
-							<p>Register on the Pre-Sale Admission List to avail 25% discount.</p>
+<?php 
+$nutrition_course_id = get_theme_mod( 'nutrition_course_id', '' );
+echo do_shortcode('[learn_press_button_purchase id="'. $nutrition_course_id.'" text="Purchase this Course" ]'); ?>
+</div>
+							<p>
+							<!-- Register on the Pre-Sale Admission List to avail 25% discount. -->
+							20% Discount. Get this discounted price for a limited time.
+							</p>
 
 						</div>
 <!-- Begin MailChimp Signup Form -->
-<link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">
+<!-- <link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">
 <style type="text/css">
 	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
 	/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
@@ -502,8 +510,9 @@ Seats are allotted on a first come, first serve basis.
 <form action="https://ifsacourse.us17.list-manage.com/subscribe/post?u=088b0389808fed5eb6305a0a2&amp;id=0d2b8abaa5" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
     <div id="mc_embed_signup_scroll">
 	
-	<input type="email" value="" name="EMAIL" class="email form-control" id="mce-EMAIL" placeholder="ENTER EMAIL ADDRESS HERE" required>
+	<input type="email" value="" name="EMAIL" class="email form-control" id="mce-EMAIL" placeholder="ENTER EMAIL ADDRESS HERE" required>-->
     <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+	<!--
     <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_088b0389808fed5eb6305a0a2_0d2b8abaa5" tabindex="-1" value=""></div>
     <div class="clear"><input type="submit" value="Register for Pre Sale Admission" name="subscribe" id="mc-embedded-subscribe" class="xbutton btn btn-primary"></div>
     </div>
@@ -522,7 +531,8 @@ Seats are allotted on a first come, first serve basis.
 			padding: 0 10px;		font-family: Rubik, sans-serif!important;
 			
 			}
-</style>
+</style> -->
+
 <!--End mc_embed_signup-->
 
 <!--
@@ -883,33 +893,40 @@ Our placement team assures you with 100% placement assistance. Your resume will 
 					<label>EARLY BIRD OFFER</label>
 
 						<div class="bordered-title">
-							<h3> <s> ₹30,000 </s> <br> ₹25,000 for LIFETIME ACCESS</h3>
-							<p>Register on the Pre-Sale Admission List to avail of Rs. 5000 discount.</p>
+							<h3> <s> ₹25,000 </s> <br> ₹19,999 for LIFETIME ACCESS</h3>
+							<p>20% Discount. Get this discounted price for a limited time.</p>
+					
 
 						</div>
 </div>
 <div class="col-md-6">
 
 <!-- Begin MailChimp Signup Form -->
-<link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">
+<!-- <link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">
 <style type="text/css">
 	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
-	/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
-	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+
 </style>
 <div id="mc_embed_signup">
 <form action="https://ifsacourse.us17.list-manage.com/subscribe/post?u=088b0389808fed5eb6305a0a2&amp;id=0d2b8abaa5" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
     <div id="mc_embed_signup_scroll">
 	
 	<input type="email" value="" name="EMAIL" class="email form-control" id="mce-EMAIL" placeholder="ENTER EMAIL ADDRESS HERE" required>
-    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+   
     <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_088b0389808fed5eb6305a0a2_0d2b8abaa5" tabindex="-1" value=""></div>
     <div class="clear"><input type="submit" value="Register for Pre Sale Admission" name="subscribe" id="mc-embedded-subscribe" class="xbutton btn btn-primary"></div>
     </div>
 </form>
-</div> 
+</div>  -->
 <!--End mc_embed_signup-->
  
+<div class="ifsa-course-button"> 
+
+<?php 
+$nutrition_course_id = get_theme_mod( 'nutrition_course_id', '' );
+echo do_shortcode('[learn_press_button_purchase id="'. $nutrition_course_id.'" text="Purchase this Course" ]'); ?>
+</div>
+
 						<p class="colored">Limited number of seats per batch,</br> Admission on a first-come, first-serve basis<p>
 
  					</div>

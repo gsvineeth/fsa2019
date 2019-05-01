@@ -159,4 +159,10 @@
         display:block;
     }
     #site-navigation { display: none }
+    .ifsa-cp #home-masthead img {
+        max-width: 90px;
+    }
+    .ifsa-cp #home-masthead h1{
+        font-size:22px;
+    }
 }

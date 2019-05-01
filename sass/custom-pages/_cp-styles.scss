@@ -1276,3 +1276,20 @@
 
 
 }
+
+/* styles for mobile */
+@media screen and (max-width: 768px) {
+
+    .ifsa-cp #home-masthead img {
+        max-width: 90px;
+    }
+    .ifsa-cp #home-masthead h1{
+        font-size:22px;
+    }
+    .ifsa-cp .homecbox{
+        height:160px;
+    }
+    .ifsa-cp #primary{
+        padding-top:0;
+    }
+}

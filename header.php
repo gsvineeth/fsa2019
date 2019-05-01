@@ -32,8 +32,8 @@
 				<div class="top-course-box"> 
 					<?php $online_page_link = get_theme_mod( 'online_course_page', '' ); ?>
 					
-						<a class="top-course-route" href="<?php echo $online_page_link; ?>">
-							<h4>online course <span>Certified Courses </span></h4>							
+						<a class="top-course-route" href="<?php echo get_permalink($online_page_link); ?>">
+							<h4>Online Course <span>Certified Nutrition coach </span></h4>							
 						</a>
 				</div>
 				<div class="top-course-box"> 
@@ -88,13 +88,13 @@
 
 					<div class="d-md-flex align-content-center col-md-7 col-12 d-none">
 						<?php $online_page_link = get_theme_mod( 'online_course_page', '' ); ?>
-						<a class="course-route" href="<?php echo $online_page_link; ?>">
-							<h4>online course <span>Certified Courses </span></h4>							
+						<a class="course-route" href="<?php echo get_permalink($online_page_link); ?>">
+							<h4>Online course <span> Certified Nutrition coach </span></h4>							
 						</a>
 
 						<?php $classroom_page_link = get_theme_mod( 'classroom_course_page', '' ); ?>
 						<a class="course-route" href="<?php echo get_permalink($classroom_page_link); ?>">
-							<h4>Classroom courses <span>Sought after Courses </span></h4>
+							<h4>Classroom courses <span> Sought after Courses </span></h4>
 						</a>
 					</div>
 

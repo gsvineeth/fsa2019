@@ -187,6 +187,23 @@ body.course-item-popup{
 }
 }
 
+.ifsa-course-button{
+    padding:20px 0px;
+    form{
+
+        .button{
+            background:$color__theme-main!important;
+            border:1px solid $color__theme-main!important;
+            cursor: pointer;
+            color:#fff!important;
+            width:250px;
+            padding:15px 0px;
+            display:block;
+            text-transform: uppercase;
+        }
+    }
+}
+
 .learnpress-page .lp-button{
     background:$color__theme-main!important;
     border:1px solid $color__theme-main!important;
