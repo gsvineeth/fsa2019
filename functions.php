@@ -220,13 +220,18 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 // }
 // add_filter( 'login_url', 'my_login_page', 10, 3 );
 
-/**
- * @snippet       Change "Place Order" Button text @ WooCommerce Checkout
- * @sourcecode    https://rudrastyh.com/?p=8327#woocommerce_order_button_text
- * @author        Misha Rudrastyh
- */
+
 add_filter( 'woocommerce_order_button_text', 'misha_custom_button_text' );
- 
 function misha_custom_button_text( $button_text ) {
    return 'Make Payment'; // new text is here 
+}
+
+// Removes Order Notes Title - Additional Information & Notes Field
+add_filter( 'woocommerce_enable_order_notes_field', '__return_false', 9999 );
+
+// Remove Order Notes Field
+add_filter( 'woocommerce_checkout_fields' , 'remove_order_notes' );
+function remove_order_notes( $fields ) {
+     unset($fields['order']['order_comments']);
+     return $fields;
 }

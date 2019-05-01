@@ -226,3 +226,7 @@ body.course-item-popup #learn-press-content-item .course-item-title{
         }
     }
 }
+
+.woocommerce-checkout-review-order #payment ul.payment_methods{
+        display:none!important;
+}
