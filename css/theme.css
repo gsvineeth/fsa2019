@@ -500,7 +500,7 @@ body.course-item-popup .content-item-summary {
   cursor: pointer;
   color: #fff !important;
   width: 250px;
-  padding: 15px 0px;
+  padding: 0px 0px;
   display: block;
   text-transform: uppercase;
 }
