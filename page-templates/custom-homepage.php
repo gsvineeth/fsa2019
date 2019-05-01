@@ -25,10 +25,10 @@ get_header('home');
 				$online_page_link = get_theme_mod('online_course_page', '' ); 
 				$nutrition_course_id = get_theme_mod( 'nutrition_course_id', '' );
 			?>
-			<?php if( is_user_logged_in() ) { ?>
-			<a href="<?php echo get_permalink($online_page_link); ?>">
-			<?php } else { ?>
+			<?php if( is_user_logged_in() ) { ?>			
 				<a href="<?php echo get_permalink($nutrition_course_id); ?>">
+			<?php } else { ?>
+				<a href="<?php echo get_permalink($online_page_link); ?>">
 			<?php } ?>
 				<div class="homecbox olc-box d-flex align-items-center justify-content-center active">
 					<div class="homebox-entry">
