@@ -45,11 +45,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 		<?php else : ?>
 
 <div class="container"> <div class="row">
-	<div class="ifsa-order-box">
-	<div class="col-md-12 d-flex justify-content-center">
-		<img class="ifsa-order-success" src="<?php echo get_template_directory_uri().'/img/tick.png' ?>" />
-	</div>
 	<div class="col-md-12 ">
+	<div class="ifsa-order-box">
+	
+		<img class="ifsa-order-success" src="<?php echo get_template_directory_uri().'/img/tick.png' ?>" />
+		
 		<div class="ifsa-order-confirmed">
 		<h4> Hey, <?php  echo $order->get_billing_first_name()  ?> </h4>
 		<h3> Your Order #<?php echo $order->get_order_number(); ?> is Confirmed! </h3>
@@ -64,10 +64,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 		?>
 		
 		</div>
-		</div>
+
+		</div>	
 	</div>
-
-
 </div></div>
 
 <!-- 

@@ -532,9 +532,10 @@ body.course-item-popup #learn-press-content-item .course-item-title {
 .ifsa-order-box {
   border-radius: 5px;
   border: 1px solid #eee;
+  padding: 20px 20px;
 }
 
-.ifsa-order-succes {
+img.ifsa-order-succes {
   max-width: 80px;
 }
 
