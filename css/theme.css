@@ -533,22 +533,27 @@ body.course-item-popup #learn-press-content-item .course-item-title {
   border-radius: 5px;
   border: 1px solid #eee;
   padding: 20px 20px;
-}
-
-img.ifsa-order-succes {
-  max-width: 80px;
-}
-
-.ifsa-order-confirmed {
   text-align: center;
 }
 
-.ifsa-order-confirmed h4 {
+.ifsa-order-box img.ifsa-order-succes {
+  max-width: 80px;
+}
+
+.ifsa-order-box .ifsa-order-confirmed h4 {
   margin: 5px 0px;
   text-transform: uppercase;
 }
 
-.ifsa-order-confirmed h3 {
+.ifsa-order-box .ifsa-order-confirmed h3 {
   margin: 5px 0px;
+}
+
+.ifsa-order-box .ifsa-order-confirmed .ifsa-goto-course {
+  background: #2294D5;
+  border: 1px solid #2294D5;
+  color: #fff;
+  height: 60px;
+  line-height: 60px;
 }
 /*# sourceMappingURL=theme.css.map */
