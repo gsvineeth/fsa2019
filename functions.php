@@ -241,9 +241,34 @@ function remove_order_notes( $fields ) {
 add_filter( 'woocommerce_endpoint_order-received_title', 'ifsa_thank_you_title' );
  
 function ifsa_thank_you_title( $old_title ){
-	return 'You\'re awesome!';
+	return 'Thank you ';
 }
 
+add_filter( 'woocommerce_thankyou_order_received_text', 'ifsa_thank_you_text', 20, 2 );
+ 
+function ifsa_thank_you_text( $thank_you_title, $order ){
+ 
+	return 'Oh ' . $order->get_billing_first_name() . ', thank you so much for your order!';
+ 
+}
+
+
+//redirect custom thank yo page
+
+// add_action( 'woocommerce_thankyou', 'bbloomer_redirectcustom');
+ 
+// function bbloomer_redirectcustom( $order_id ){
+//     $order = new WC_Order( $order_id );
+ 
+//     $url = 'http://yoursite.com/custom-url';
+ 
+//     if ( $order->status != 'failed' ) {
+//         wp_redirect($url);
+//         exit;
+//     }
+// }
+
+//fetching order data
 function get_order_details($order_id){
 
     // 1) Get the Order object
