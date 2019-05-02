@@ -20,6 +20,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 ?>
 
+<!-- custom code -->
+<?php get_order_details( $order_id );
+?>
+<!-- custom code -->
+
 <div class="woocommerce-order">
 
 	<?php if ( $order ) : ?>
