@@ -44,6 +44,14 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 		<?php else : ?>
 
+<div class="container"> <div class="row">
+	<div class="col-md-12 d-flex justify-content-center">
+		<img src="<?php get_template_directory_uri().'/img/tick.png' ?>" />
+	</div>
+	
+</div></div>
+
+<!-- 
 			<p class="woocommerce-notice woocommerce-notice--success woocommerce-thankyou-order-received"><?php echo apply_filters( 'woocommerce_thankyou_order_received_text', __( 'Thank you. Your order has been received.', 'woocommerce' ), $order ); ?></p>
 
 			<ul class="woocommerce-order-overview woocommerce-thankyou-order-details order_details">
@@ -77,13 +85,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 					</li>
 				<?php endif; ?>
 
-			</ul>
+			</ul> -->
 
 		<?php endif; ?>
 
 <div class="row"> 
-	<?php do_action( 'woocommerce_thankyou_' . $order->get_payment_method(), $order->get_id() ); ?> 
-	 <?php do_action( 'woocommerce_thankyou', $order->get_id() ); ?>
+	<?php //do_action( 'woocommerce_thankyou_' . $order->get_payment_method(), $order->get_id() ); ?> 
+	 <?php //do_action( 'woocommerce_thankyou', $order->get_id() ); ?>
 </div>
 		
 
