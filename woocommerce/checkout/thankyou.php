@@ -48,7 +48,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	<div class="col-md-12 d-flex justify-content-center">
 		<img class="ifsa-order-success" src="<?php echo get_template_directory_uri().'/img/tick.png' ?>" />
 	</div>
-	<div class="col-md-12 d-flex justify-content-center">
+	<div class="col-md-12 d-flex flex-column justify-content-center">
 		<h4> Hey, <?php  echo $order->get_billing_first_name()  ?> </h4>
 		<h3> Your Order #<?php echo $order->get_order_number(); ?> is Confirmed! </h3>
 		<p> We have send your email with your account access details and purchase confirmation. </p>
