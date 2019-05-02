@@ -22,8 +22,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 <!-- custom code -->
 <?php 
-$order_id = wc_get_order_id_by_order_key( $_GET['key'] );
-get_order_details( $order_id );
+// $order_id = wc_get_order_id_by_order_key( $_GET['key'] );
+// get_order_details( $order_id );
 ?>
 <!-- custom code -->
 
