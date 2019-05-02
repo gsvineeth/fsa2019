@@ -248,7 +248,7 @@ add_filter( 'woocommerce_thankyou_order_received_text', 'ifsa_thank_you_text', 2
  
 function ifsa_thank_you_text( $thank_you_title, $order ){
  
-	return 'Oh ' . $order->get_billing_first_name() . ', thank you so much for your order!';
+	return 'Greetings ' . $order->get_billing_first_name() . ', thank you so much for your order. Your account details are mailed to to your email - '. $order->get_billing_email().'. ';
  
 }
 
