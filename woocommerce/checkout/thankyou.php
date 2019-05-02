@@ -45,6 +45,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 		<?php else : ?>
 
 <div class="container"> <div class="row">
+	<div class="ifsa-order-box">
 	<div class="col-md-12 d-flex justify-content-center">
 		<img class="ifsa-order-success" src="<?php echo get_template_directory_uri().'/img/tick.png' ?>" />
 	</div>
@@ -61,7 +62,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 			</button>
 		<?php }
 		?>
-		<p> </p>
+		
+		</div>
 		</div>
 	</div>
 

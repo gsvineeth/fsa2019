@@ -528,4 +528,26 @@ body.course-item-popup #learn-press-content-item .course-item-title {
 .woocommerce-checkout-review-order #payment ul.payment_methods {
   display: none !important;
 }
+
+.ifsa-order-box {
+  border-radius: 5px;
+  border: 1px solid #eee;
+}
+
+.ifsa-order-succes {
+  max-width: 80px;
+}
+
+.ifsa-order-confirmed {
+  text-align: center;
+}
+
+.ifsa-order-confirmed h4 {
+  margin: 5px 0px;
+  text-transform: uppercase;
+}
+
+.ifsa-order-confirmed h3 {
+  margin: 5px 0px;
+}
 /*# sourceMappingURL=theme.css.map */

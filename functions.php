@@ -241,7 +241,7 @@ function remove_order_notes( $fields ) {
 add_filter( 'woocommerce_endpoint_order-received_title', 'ifsa_thank_you_title' );
  
 function ifsa_thank_you_title( $old_title ){
-	return 'Thank you ';
+	return ' ';
 }
 
 add_filter( 'woocommerce_thankyou_order_received_text', 'ifsa_thank_you_text', 20, 2 );
