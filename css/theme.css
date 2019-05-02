@@ -554,6 +554,7 @@ body.course-item-popup #learn-press-content-item .course-item-title {
   border: 1px solid #2294D5;
   color: #fff;
   font-size: 18px;
+  padding: 10px 20px;
 }
 
 .ifsa-order-box .ifsa-order-confirmed .ifsa-goto-course a {
