@@ -536,7 +536,7 @@ body.course-item-popup #learn-press-content-item .course-item-title {
   text-align: center;
 }
 
-.ifsa-order-box img.ifsa-order-succes {
+.ifsa-order-box img.ifsa-order-success {
   max-width: 80px;
 }
 
@@ -553,7 +553,10 @@ body.course-item-popup #learn-press-content-item .course-item-title {
   background: #2294D5;
   border: 1px solid #2294D5;
   color: #fff;
-  height: 60px;
-  line-height: 60px;
+  font-size: 18px;
+}
+
+.ifsa-order-box .ifsa-order-confirmed .ifsa-goto-course a {
+  color: #fff;
 }
 /*# sourceMappingURL=theme.css.map */
