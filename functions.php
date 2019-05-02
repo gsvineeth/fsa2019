@@ -235,3 +235,11 @@ function remove_order_notes( $fields ) {
      unset($fields['order']['order_comments']);
      return $fields;
 }
+
+//custom thank you note
+
+add_filter( 'woocommerce_endpoint_order-received_title', 'ifsa_thank_you_title' );
+ 
+function ifsa_thank_you_title( $old_title ){
+	return 'You\'re awesome!';
+}
