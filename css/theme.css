@@ -560,4 +560,23 @@ body.course-item-popup #learn-press-content-item .course-item-title {
 .ifsa-order-box .ifsa-order-confirmed .ifsa-goto-course a {
   color: #fff;
 }
+
+.tml ul.tml-links {
+  list-style: none;
+  margin: 0px 0px;
+  padding: 0px 0px;
+}
+
+.tml ul.tml-links li {
+  margin: 0px 0px;
+  padding: 0px 0px 20px 0px;
+}
+
+.tml .tml-button {
+  background: #2294D5;
+  border: 1px solid #2294D5;
+  color: #fff;
+  font-size: 18px;
+  padding: 10px 20px;
+}
 /*# sourceMappingURL=theme.css.map */
