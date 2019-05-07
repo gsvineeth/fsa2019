@@ -220,7 +220,10 @@ function my_login_redirect( $redirect_to, $request, $user ) {
 			// redirect them to another URL, in this case, the homepage 
 			$nutrition_course_id = get_theme_mod( 'nutrition_course_id', '' ); 
             $redirect_to =  get_permalink($nutrition_course_id);
-        }
+        } elseif (in_array('customer', $user->roles) ){
+			$nutrition_course_id = get_theme_mod( 'nutrition_course_id', '' ); 
+            $redirect_to =  get_permalink($nutrition_course_id);
+		}
     }
 
     return $redirect_to;
