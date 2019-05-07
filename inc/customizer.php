@@ -115,7 +115,7 @@ function ifsa2019_customize_register( $wp_customize ) {
 
 	$wp_customize->add_control( 'my_account_page',
 	array(
-		'label' => __( 'Online Nutrtion Course ID' ),
+		'label' => __( 'My Accounts page' ),
 		'description' => esc_html__( 'Select the account page' ),
 		'section' => 'theme_option_section',
 		'priority' => 10, // Optional. Order priority to load the control. Default: 10
