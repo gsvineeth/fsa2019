@@ -281,3 +281,23 @@ body.course-item-popup #learn-press-content-item .course-item-title{
 
     }
 }
+
+
+.woocommerce-MyAccount-navigation{
+    ul{
+        margin:0px 0px 50px 0px;
+        padding:0px 0px;
+        li{
+            list-style: none;
+            margin: 0px;
+            padding:5px 0px;
+            border-bottom:1px solid #ddd;
+            a{
+                color: $color__text-main;
+            }
+            &:last-child{
+                border:none;
+            }
+        }
+    }
+}

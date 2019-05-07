@@ -20,5 +20,17 @@
     $('.close-button').click( function(){
         $('.mobile-menu').css('display','none')
     })
+    $('.classmenu-trigger a').click( function(event){
+        event.preventDefault();     
+    })
+
+    $('.classmenu-trigger').hover( function(){
+        //event.preventDefault();
+        $('.menu-classroom-container').toggleClass("active")
+    })
+    $('.top-course-trigger').click( function(e){
+        e.preventDefault();
+        $('.menu-classroom-container').toggleClass("active")
+    })
 
 } )( jQuery );

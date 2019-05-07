@@ -30,17 +30,30 @@
 			<div class="mobile-menu-box">
 				<div class="close-button"> <img src="<?php echo get_template_directory_uri().'/img/close.png'?>"/></div>
 				<div class="top-course-box"> 
-					<?php $online_page_link = get_theme_mod( 'online_course_page', '' ); ?>
-					
-						<a class="top-course-route" href="<?php echo get_permalink($online_page_link); ?>">
-							<h4>Online Course <span>Certified Nutrition coach </span></h4>							
-						</a>
+					<?php 
+					$online_page_link = get_theme_mod( 'online_course_page', '' );
+					$nutrition_course_id = get_theme_mod( 'nutrition_course_id', '' ); 
+					?>
+					<?php if( is_user_logged_in() ) { ?>
+					<a class="top-course-route" href="<?php echo get_permalink($nutrition_course_id); ?>">
+					<?php } else { ?>
+					<a class="top-course-route" href="<?php echo get_permalink($online_page_link); ?>">
+					<?php } ?>
+						<h4>Online Course <span>Certified Nutrition coach </span></h4>							
+					</a>
 				</div>
-				<div class="top-course-box"> 
-					<?php $classroom_page_link = get_theme_mod( 'classroom_course_page', '' ); ?>
-						<a class="top-course-route" href="<?php echo get_permalink($classroom_page_link); ?>">
+
+				<div class="top-course-box"> 					
+						<a class="top-course-route top-course-trigger" href="#">
 							<h4>Classroom courses <span>Sought after Courses </span></h4>
 						</a>
+						<span class="caret"></span>
+						<?php
+							wp_nav_menu( array(
+								'theme_location' => 'menu-3',
+								'menu_id'        => 'classroom-menu',
+							) );
+						?>
 				</div>
 
 				<div class="mobile-menu-nav">
@@ -87,15 +100,34 @@
 					</div>
 
 					<div class="d-md-flex align-content-center col-md-7 col-12 d-none">
-						<?php $online_page_link = get_theme_mod( 'online_course_page', '' ); ?>
-						<a class="course-route" href="<?php echo get_permalink($online_page_link); ?>">
-							<h4>Online course <span> Certified Nutrition coach </span></h4>							
-						</a>
+						<div class="course-route">
+							<?php 
+								$online_page_link = get_theme_mod( 'online_course_page', '' ); 
+								$nutrition_course_id = get_theme_mod( 'nutrition_course_id', '' );
+							?>
+							<?php if( is_user_logged_in() ) { ?>
+								<a href="<?php echo get_permalink($nutrition_course_id); ?>">
+							<?php } else { ?>
+								<a class="course-route" href="<?php echo get_permalink($online_page_link); ?>">
+							<?php } ?>
+								<h4>Online course <span> Certified Nutrition coach </span></h4>							
+							</a>
+						</div>
 
-						<?php $classroom_page_link = get_theme_mod( 'classroom_course_page', '' ); ?>
-						<a class="course-route" href="<?php echo get_permalink($classroom_page_link); ?>">
-							<h4>Classroom courses <span> Sought after Courses </span></h4>
-						</a>
+						<div class="course-route classmenu-trigger">
+							<?php $classroom_page_link = get_theme_mod( 'classroom_course_page', '' ); ?>						
+							<a class="classroom-menu-trigger" href="#">
+								<h4>Classroom courses <span> Sought after Courses </span></h4>
+							</a>
+							<span class="caret"></span>
+							<?php
+								wp_nav_menu( array(
+									'theme_location' => 'menu-3',
+									'menu_id'        => 'classroom-menu',
+								) );
+							?>
+						</div>
+
 					</div>
 
 
@@ -103,7 +135,8 @@
 					<?php if ( ! is_user_logged_in() ){  ?>
 						 <div class="align-self-center "> <a class="head-login" href="<?php echo home_url()?>/login">Sign in</a> </div>
 						 <?php } else { ?>
-							<div class="align-self-center "> <a class="head-login" href="<?php echo wp_logout_url(get_permalink()); ?>">Sign Out</a> </div>
+							<?php $myaccount_page_link = get_theme_mod( 'my_account_page', '' );?>
+							<div class="align-self-center "> <a class="head-login" href="<?php echo get_permalink($myaccount_page_link); ?>">My Account</a> </div>
 						 <?php } ?>
 					</div>
 					

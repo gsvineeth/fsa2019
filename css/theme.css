@@ -25,6 +25,16 @@
   background: #2294D5;
   margin: 10px 25px;
   border-radius: 3px;
+  position: relative;
+}
+
+.mobile-menu .mobile-menu-box .top-course-box span.caret {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: url("../img/arrow-down-white.png") no-repeat;
+  top: 33px;
+  right: 20px;
 }
 
 .mobile-menu .mobile-menu-box .top-course-box a {
@@ -41,6 +51,34 @@
 .mobile-menu .mobile-menu-box .top-course-box a h4 span {
   display: block;
   text-transform: none;
+}
+
+.mobile-menu .mobile-menu-box .top-course-box .menu-classroom-container {
+  display: none;
+}
+
+.mobile-menu .mobile-menu-box .top-course-box .menu-classroom-container ul {
+  margin: 0px;
+  padding: 0px 20px 20px 20px;
+  list-style: none;
+}
+
+.mobile-menu .mobile-menu-box .top-course-box .menu-classroom-container ul li {
+  padding: 7px 0px;
+  margin: 0px 0px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.mobile-menu .mobile-menu-box .top-course-box .menu-classroom-container ul li a {
+  padding: 0px 0px;
+}
+
+.mobile-menu .mobile-menu-box .top-course-box .menu-classroom-container ul li:last-child {
+  border: none;
+}
+
+.mobile-menu .mobile-menu-box .top-course-box .active {
+  display: block;
 }
 
 .mobile-menu .mobile-menu-box .close-button {
@@ -146,19 +184,62 @@
 
 .head-area .course-route {
   color: #606060;
-  margin-right: 20px;
+  padding-right: 30px;
 }
 
-.head-area .course-route h4 {
+.head-area .course-route a {
+  color: #606060;
+  display: block;
+}
+
+.head-area .course-route a h4 {
   text-transform: uppercase;
   font-weight: 700;
+  line-height: 1.2;
 }
 
-.head-area .course-route h4 span {
+.head-area .course-route a h4 span {
   display: block;
   text-transform: none;
   font-family: Metropolis Regular, sans-serif;
   font-size: 14px;
+}
+
+.head-area .course-route .menu-classroom-container {
+  display: none;
+  position: absolute;
+  z-index: 100;
+  top: 100%;
+  left: 0px;
+  width: 280px;
+  background: #fff;
+}
+
+.head-area .course-route .menu-classroom-container ul {
+  list-style: none;
+  margin: 0px 0px;
+  padding: 10px 10px;
+}
+
+.head-area .course-route .menu-classroom-container ul li {
+  margin: 0px 0px;
+  padding: 7px 0px;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-family: Metropolis Semi Bold, sans-serif;
+  border-bottom: 1px solid #ddd;
+}
+
+.head-area .course-route .menu-classroom-container ul li:hover a {
+  color: #2294D5;
+}
+
+.head-area .course-route .menu-classroom-container ul li:last-child {
+  border: none;
+}
+
+.head-area .course-route .active {
+  display: block;
 }
 
 .head-area .head-login {
@@ -171,6 +252,19 @@
   text-transform: uppercase;
   color: #2294D5;
   font-family: Metropolis Semi Bold, sans-serif;
+}
+
+.classmenu-trigger {
+  position: relative;
+}
+
+.classmenu-trigger span.caret {
+  width: 20px;
+  height: 20px;
+  background: url("../img/arrow-down.png") no-repeat;
+  position: absolute;
+  right: 0px;
+  top: 27px;
 }
 
 /* styles for desktop */
@@ -578,5 +672,25 @@ body.course-item-popup #learn-press-content-item .course-item-title {
   color: #fff;
   font-size: 18px;
   padding: 10px 20px;
+}
+
+.woocommerce-MyAccount-navigation ul {
+  margin: 0px 0px 50px 0px;
+  padding: 0px 0px;
+}
+
+.woocommerce-MyAccount-navigation ul li {
+  list-style: none;
+  margin: 0px;
+  padding: 5px 0px;
+  border-bottom: 1px solid #ddd;
+}
+
+.woocommerce-MyAccount-navigation ul li a {
+  color: #606060;
+}
+
+.woocommerce-MyAccount-navigation ul li:last-child {
+  border: none;
 }
 /*# sourceMappingURL=theme.css.map */

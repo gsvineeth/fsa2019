@@ -103,7 +103,26 @@ function ifsa2019_customize_register( $wp_customize ) {
 		'type' => 'text',
 		'capability' => 'edit_theme_options', // Optional. Default: 'edit_theme_options'
 	)
-);
+	);
+
+	$wp_customize->add_setting( 'my_account_page',
+	array(
+		'default' => '',
+		'transport' => 'refresh',
+		'sanitize_callback' => 'absint'
+	)
+	);
+
+	$wp_customize->add_control( 'my_account_page',
+	array(
+		'label' => __( 'Online Nutrtion Course ID' ),
+		'description' => esc_html__( 'Select the account page' ),
+		'section' => 'theme_option_section',
+		'priority' => 10, // Optional. Order priority to load the control. Default: 10
+		'type' => 'dropdown-pages',
+		'capability' => 'edit_theme_options', // Optional. Default: 'edit_theme_options'
+	)
+	);
 
 }
 add_action( 'customize_register', 'ifsa2019_customize_register' );
