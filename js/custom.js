@@ -20,7 +20,7 @@
     $('.close-button').click( function(){
         $('.mobile-menu').css('display','none')
     })
-    $('.classmenu-trigger a').click( function(event){
+    $('.classmenu-trigger > a').click( function(event){
         event.preventDefault();     
     })
 
