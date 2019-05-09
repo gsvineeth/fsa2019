@@ -164,9 +164,10 @@ add_action( 'widgets_init', 'ifsa2019_widgets_init' );
  */
 function ifsa2019_scripts() {
 	wp_enqueue_style( 'rubik', '//fonts.googleapis.com/css?family=Rubik:300,400,700' );
-	wp_enqueue_style( 'metropolis', get_template_directory_uri() . '/fonts/fonts.css');
+	wp_enqueue_style( 'metropolis', get_template_directory_uri() . '/fonts/fonts.css');	
 	wp_enqueue_style( 'theme', get_template_directory_uri() . '/css/theme.css');
 	wp_enqueue_style( 'ifsa2019-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'vineeth', get_template_directory_uri() . '/css/vineeth.css');
 
 
 	wp_enqueue_script('jquery');
