@@ -26,7 +26,7 @@ get_header();
 					<div class="row">
                     <div class="col-md-7">
                         <h4>Online course</h4>
-                        <h1>Become A </br>
+<h1>Become A </br>
 Certified Nutrition Coach
 </h1>  
 
@@ -38,9 +38,8 @@ Seats are allotted on a first come, first serve basis.
  
                     </div>
                     <div class="col-md-5">
-
-					</div>
-					</div>
+		</div>
+		</div>
                 </div>
             </section>
              
@@ -74,10 +73,7 @@ Seats are allotted on a first come, first serve basis.
  						<span> International Fitness Model</span> </p>
 						<p> <a href="https://www.facebook.com/unstopablesidd"><i class="fa fa-facebook"></i></a> &nbsp;&nbsp; <a href="https://www.instagram.com/unstopablesidd/	"><i class="fa fa-instagram"></i></a> </p>
 
-					</div>
-
-					
-					
+					</div>					
 					</div>
 
 				</div>
