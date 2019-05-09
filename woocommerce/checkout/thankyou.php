@@ -58,7 +58,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 		$items = $order->get_items(); 
 		foreach ( $items as $item_id => $item_data ) { ?>
 			<button class="ifsa-goto-course">
-				<a href="<?php echo get_permalink( $item_data['product_id']) ?>">Start The Course</a>
+				<a href="<?php echo get_permalink( $item_data['product_id']) ?>">Access Course Page</a>
 			</button>
 		<?php }
 		?>
